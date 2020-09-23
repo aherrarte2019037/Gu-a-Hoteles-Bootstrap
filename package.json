@@ -1,0 +1,16 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Proyecto del curso Full Stack Web Development",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Angel-Herrarte@bitbucket.org/Angel-Herrarte/guia-hoteles.git"
+  },
+  "author": "Angel Herrarte",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Angel-Herrarte/guia-hoteles#readme"
+}
