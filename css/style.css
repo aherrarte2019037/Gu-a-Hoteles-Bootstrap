@@ -1,0 +1,32 @@
+.jumbotron{
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    border-radius: 0;
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.btn-raised {
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.60);
+}
+
+.btn-raised:hover{
+    box-shadow: 0 3.4px 6px 0 rgba(0,0,0,0.75);
+}
+
+.pp{
+    font-family: "Century Gothic", serif;
+    color: #353535;
+}
+
+.h4p{
+    color: #3c3c3c;
+}
+
+.h5p{
+    color: #eeeeee;
+}
