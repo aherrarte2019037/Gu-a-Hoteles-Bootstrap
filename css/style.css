@@ -12,11 +12,13 @@
 
 .btn-raised {
     border-radius: 3px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.60);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.60) !important;
 }
 
 .btn-raised:hover{
     box-shadow: 0 3.4px 6px 0 rgba(0,0,0,0.75);
+    background-color: #17a2b8;
+    border-color: #17a2b8;
 }
 
 .pp{
@@ -50,3 +52,6 @@ button.navbar-toggler:hover{
     height: 1.4em;
 }
 
+.imarker{
+    padding-left: 2px;
+}
