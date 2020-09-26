@@ -3,9 +3,10 @@
     font-weight: normal;
     color: white;
     border-radius: 0;
-    background: #005C97;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 45px;
+    background: #136a8a;
+    background: -webkit-linear-gradient(to top, #267871, #136a8a);
+    background: linear-gradient(to right, #267871, #136a8a);
 
 }
 
@@ -30,3 +31,22 @@
 .h5p{
     color: #eeeeee;
 }
+
+button.navbar-toggler{
+    padding: 0.15rem 0.45rem 0.15rem 0.49rem;
+}
+
+button.navbar-toggler:focus{
+    outline: none;
+}
+
+button.navbar-toggler:hover{
+    border: 1px solid transparent;
+}
+
+
+.navbar-toggler-icon{
+    width: 1.4em;
+    height: 1.4em;
+}
+
