@@ -1,3 +1,10 @@
+html { overflow-x:hidden; }
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .jumbotron{
     text-align: center;
     font-weight: normal;
@@ -54,4 +61,17 @@ button.navbar-toggler:hover{
 
 .imarker{
     padding-left: 2px;
+}
+
+.breadcrumb.bg-dark{
+    background-color: #212529;
+    color: gray;
+}
+
+li.breadcrumb-item{
+    color: #747577;
+}
+
+li.breadcrumb-item.active{
+    color: #6fa7e0;
 }
