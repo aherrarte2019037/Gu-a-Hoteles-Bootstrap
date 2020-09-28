@@ -27,11 +27,11 @@
         </div>
     </nav>
 
-    <div class="jumbotron">
+    <div class="jumbotron jumbotronPrincipal">
         <h1 class="display-3">Hoteles</h1>
     </div>
     <div class="d-flex flex-wrap justify-content-center">
-        <div class="col-lg-9 col-md-12 col-10 mb-1">
+        <div class="col-lg-9 col-md-12 col-10 mb-0">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item active">Inicio</li>
@@ -42,6 +42,14 @@
                 </ol>
             </nav>
         </div>
+
+        <div class="col-lg-9 col-md-12 col-10 mb-0">
+            <div class="jumbotron banner">
+                <h1 class="display-4 text-center font-weight-normal">¡Ofertas!</h1>
+                <p class="lead text-center">Aprovecha nuestras ofertas de verano, hasta un 50% de descuento.</p>
+            </div>
+        </div>
+
         <div class="w-100"></div>
         <div class="col-md-4 col-lg-3 col-10 text-justify">
             <h4 class="text-center font-weight-normal h4p">Confiabilidad</h4>
@@ -58,44 +66,82 @@
         </div>
     </div>
 
-    <div class="row justify-content-center ml-0 mr-0">
-        <div class="list-group col-md-12 col-lg-9 col-10 list-group-flush ml-2">
-            <a href="#" class="list-group-item list-group-item-action border-bottom-0">
-                <div class="d-flex justify-content-between">
-                    <h5 class="mb-1 text-dark font-weight-normal">Buena Vista</h5>
-                </div>
-                <button class="hvr-wobble-horizontal btn btn-info btn-sm float-right btn-raised pl-3 pr-3">&nbsp;Reservar&nbsp;<i class="fas fa-chevron-right fa-sm"></i></button>
-                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action border-top-0 border-bottom-0">
-                <div class="d-flex justify-content-between">
-                    <h5 class="mb-1 text-dark font-weight-normal">San Cristóbal</h5>
-                </div>
-                <button class="hvr-wobble-horizontal btn btn-info btn-sm float-right btn-raised pl-3 pr-3">&nbsp;Reservar&nbsp;<i class="fas fa-chevron-right fa-sm"></i></button>
-                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action border-0">
-                <div class="d-flex justify-content-between">
-                    <h5 class="mb-1 text-dark font-weight-normal">The Royale</h5>
-                </div>
-                <button class="hvr-wobble-horizontal btn btn-info btn-sm float-right btn-raised pl-3 pr-3">&nbsp;Reservar&nbsp;<i class="fas fa-chevron-right fa-sm"></i></button>
-                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action border-0">
-                <div class="d-flex justify-content-between">
-                    <h5 class="mb-1 text-dark font-weight-normal">Joongle</h5>
-                </div>
-                <button class="hvr-wobble-horizontal btn btn-info btn-sm float-right btn-raised pl-3 pr-3">&nbsp;Reservar&nbsp;<i class="fas fa-chevron-right fa-sm"></i></button>
-                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action border-0">
-                <div class="d-flex justify-content-between">
-                    <h5 class="mb-1 text-dark font-weight-normal">Malaina</h5>
-                </div>
-                <button class="hvr-wobble-horizontal btn btn-info btn-sm float-right btn-raised pl-3 pr-3">&nbsp;Reservar&nbsp;<i class="fas fa-chevron-right fa-sm"></i></button>
-                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            </a>
+    <div class="d-flex flex-wrap pl-md-3 pr-md-2 ml-5 mr-5 pl-4 pr-3">
+        <div class="col-md-card card-hotel d-flex flex-column justify-content-between mr-2">
+            <img src="images/imgElMirador.jpg" alt="" class="card-img-top img-fluid">
+            <div class="card-header">
+                <h4 class="card-title text-center">El Mirador</h4>
+                <h6 class="card-subtitle text-dark text-center">Zona 15</h6>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi harum soluta tempora velit voluptatibus</p>
+            </div>
+            <div>
+                <button class="btn btn-info btn-sm btn-raised hvr-wobble-horizontal">Reservar <i class="fas fa-chevron-right"></i></button>
+            </div>
         </div>
+        <div class="card card-hotel d-flex flex-column justify-content-between mr-2">
+            <img src="images/imgAqua.jpg" alt="" class="card-img-top img-fluid">
+            <div class="card-header">
+                <h4 class="card-title text-center">Aqua</h4>
+                <h6 class="card-subtitle text-dark text-center">Zona 18</h6>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi harum soluta tempora velit voluptatibus</p>
+            </div>
+            <div>
+                <button class="btn btn-info btn-sm btn-raised hvr-wobble-horizontal">Reservar <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div><div class="card card-hotel d-flex flex-column justify-content-between mr-2">
+        <img src="images/imgJoongle.jpg" alt="" class="card-img-top img-fluid">
+        <div class="card-header">
+            <h4 class="card-title text-center">Joongle</h4>
+            <h6 class="card-subtitle text-dark text-center">Zona 3</h6>
+        </div>
+        <div class="card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi harum soluta tempora velit voluptatibus</p>
+        </div>
+        <div>
+            <button class="btn btn-info btn-sm btn-raised hvr-wobble-horizontal">Reservar <i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div><div class="card card-hotel d-flex flex-column justify-content-between mr-2">
+        <img src="images/imgMalaina.jpeg" alt="" class="card-img-top img-fluid">
+        <div class="card-header">
+            <h4 class="card-title text-center">Malaina</h4>
+            <h6 class="card-subtitle text-dark text-center">Zona 14</h6>
+        </div>
+        <div class="card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi harum soluta tempora velit voluptatibus</p>
+        </div>
+        <div>
+            <button class="btn btn-info btn-sm btn-raised hvr-wobble-horizontal">Reservar <i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div><div class="card card-hotel d-flex flex-column justify-content-between mr-2">
+        <img src="images/imgMarriot.jpg" alt="" class="card-img-top img-fluid">
+        <div class="card-header">
+            <h4 class="card-title text-center">Marriot</h4>
+            <h6 class="card-subtitle text-dark text-center">Zona 21</h6>
+        </div>
+        <div class="card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi harum soluta tempora velit voluptatibus</p>
+        </div>
+        <div>
+            <button class="btn btn-info btn-sm btn-raised hvr-wobble-horizontal">Reservar <i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div><div class="card card-hotel d-flex flex-column justify-content-between mr-2">
+        <img src="images/imgTheRoyale.jpg" alt="" class="card-img-top img-fluid">
+        <div class="card-header">
+            <h4 class="card-title text-center">Royale</h4>
+            <h6 class="card-subtitle text-dark text-center">Zona 11</h6>
+        </div>
+        <div class="card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi harum soluta tempora velit voluptatibus</p>
+        </div>
+        <div>
+            <button class="btn btn-info btn-sm btn-raised hvr-wobble-horizontal">Reservar <i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
     </div>
 
     <footer class="mt-4 pt-1">

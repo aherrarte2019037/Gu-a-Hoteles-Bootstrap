@@ -27,7 +27,7 @@
     margin-right: 0;
 }
 
-.jumbotron{
+.jumbotronPrincipal{
     text-align: center;
     font-weight: normal;
     color: white;
@@ -39,9 +39,17 @@
 
 }
 
+.banner{
+    color: white;
+    background-image: url("../images/bgBanner3.svg");
+    background-size: cover;
+}
+
+
 .btn-raised {
-    border-radius: 3px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.60) !important;
+    border-radius: 0;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.60) !important;
+    width: 99.8%;
 }
 
 .btn-raised:hover{
@@ -99,5 +107,24 @@ ol.breadcrumb{
 
 th{
     font-weight: 400;
+}
+
+.card-hotel{
+    flex: 1 300px;
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    div.d-flex.flex-wrap.pl-md-3.pr-md-2.ml-5.mr-5.pl-4.pr-3{
+        margin-left: 5px!important;
+        margin-right: 5px!important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    div.d-flex.flex-wrap.pl-md-3.pr-md-2.ml-5.mr-5.pl-4.pr-3{
+        margin-left: 127px!important;
+        margin-right: 127px!important;
+    }
 }
 
