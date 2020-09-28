@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <title>Curso Bootstrap </title>
 </head>
-<body>
+<body id="bodyPrices">
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a href="./index.html" class="navbar-brand mb-1">Hoteles</a>
+        <a href="index.html" class="navbar-brand mb-1">Hoteles</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a href="./index.html" class="nav-link">Inicio</a></li>
-                <li class="nav-item active"><a href="./we.html" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="./we.html" class="nav-link">Nosotros</a></li>
                 <li class="nav-item"><a href="./contact.html" class="nav-link">Contacto</a></li>
-                <li class="nav-item"><a href="prices.html" class="nav-link">Precios</a></li>
+                <li class="nav-item active"><a href="./prices.html" class="nav-link">Precios</a></li>
                 <li class="nav-item"><a href="./terms.html" class="nav-link">Términos</a></li>
             </ul>
         </div>
@@ -28,17 +29,71 @@
         <h1 class="display-3">Hoteles</h1>
     </div>
 
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-10">
+
+            </div>
+        </div>
+    </div>
+
     <div class="row justify-content-center">
         <div class="col-lg-9 col-md-12 col-10 mb-1">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">Inicio</li>
-                    <li class="breadcrumb-item active">Nosotros</li>
+                    <li class="breadcrumb-item">Nosotros</li>
                     <li class="breadcrumb-item">Contactos</li>
-                    <li class="breadcrumb-item">Precios</li>
+                    <li class="breadcrumb-item active">Precios</li>
                     <li class="breadcrumb-item">Términos</li>
                 </ol>
             </nav>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-9 col-md-12 col-10">
+            <div class="table-responsive scrollContainerX">
+                <table class="table table-striped">
+                    <thead class="thead-dark text-center">
+                    <th>Calidad</th>
+                    <th>Pinamar</th>
+                    <th>Mar del Plata</th>
+                    <th>San Clemente</th>
+                    <th>Santa Teresita</th>
+                    </thead>
+                    <tbody class="text-center">
+                    <tr>
+                        <td><i class="fas fa-star"></i></td>
+                        <td>$100</td>
+                        <td>$105</td>
+                        <td>$120</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                        <td>$105</td>
+                        <td>$120</td>
+                        <td>$135</td>
+                        <td>$140</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                        <td>$100</td>
+                        <td>$125</td>
+                        <td>$150</td>
+                        <td>$185</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                        <td>$200</td>
+                        <td>$225</td>
+                        <td>$250</td>
+                        <td>$285</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
