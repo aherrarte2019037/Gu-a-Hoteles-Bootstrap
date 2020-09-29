@@ -43,6 +43,7 @@
     color: white;
     background-image: url("../images/bgBanner3.svg");
     background-size: cover;
+    border-radius: 10px;
 }
 
 
@@ -111,7 +112,7 @@ th{
 
 .card-hotel{
     flex: 1 300px;
-    margin-top: 10px;
+    margin: 10px 15px 20px 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -127,4 +128,15 @@ th{
         margin-right: 127px!important;
     }
 }
+
+@media only screen and (max-width: 751px) {
+    .card-hotel{
+        margin: 10px 15px 50px 0;
+    }
+}
+
+
+
+
+
 
