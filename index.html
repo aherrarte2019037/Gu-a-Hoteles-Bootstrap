@@ -43,10 +43,32 @@
             </nav>
         </div>
 
-        <div class="col-lg-9 col-md-12 col-10 mb-0">
-            <div class="jumbotron banner">
-                <h1 class="display-4 text-center font-weight-normal">¡Ofertas!</h1>
-                <p class="lead text-center">Aprovecha nuestras ofertas de verano, hasta un 50% de descuento.</p>
+        <div class="col-lg-9 col-md-12 col-10 mt-2 mb-4">
+            <div id="carouselControl" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselControl" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselControl" data-slide-to="1"></li>
+                    <li data-target="#carouselControl" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/banner1.svg" alt="Primer imagen">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/banner2.svg" alt="Primer imagen">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/banner3.svg" alt="Primer imagen">
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselControl" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselControl" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -283,11 +305,12 @@
         $('.popover-dismiss').popover({
             trigger: 'focus'
         });
-    </script>
-    <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
-        })
+        });
+        $('.carousel').carousel({
+           interval: 2900
+        });
     </script>
 </body>
 </html>
