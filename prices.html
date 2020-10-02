@@ -48,17 +48,12 @@
 
     <div class="row justify-content-center">
         <div class="col-lg-9 col-md-12 col-10 mt-3">
-            <ul class="nav nav-pills" id="myTab" role="tablist" style="margin-bottom: 11px">
-                <li class="nav-item" style="width: 33.33%">
-                    <a class="nav-link active" id="comparar-tab" data-toggle="tab" href="#comparar" role="tab" aria-controls="comparar" aria-selected="true"><i class="fas fa-equals"></i> Comparar</a>
-                </li>
-                <li class="nav-item" style="width: 33.33%">
-                    <a class="nav-link" id="pagos-tab" data-toggle="tab" href="#pagos" role="tab" aria-controls="pagos" aria-selected="false"><i class="far fa-credit-card"></i> Métodos de pago</a>
-                </li>
-                <li class="nav-item" style="width: 33.34%">
-                    <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false"><i class="fas fa-comments"></i> Comentarios</a>
-                </li>
-            </ul>
+            <nav class="nav nav-pills flex-column flex-sm-row mb-3">
+                <a class="nav-link active col-lg-4 col-md-4 col-12" id="comparar-tab" data-toggle="tab" href="#comparar" role="tab" aria-controls="comparar" aria-selected="true"><i class="fas fa-equals"></i> Comparar</a>
+                <a class="nav-link col-lg-4 col-md-4 col-12" id="pagos-tab" data-toggle="tab" href="#pagos" role="tab" aria-controls="pagos" aria-selected="false"><i class="far fa-credit-card"></i> Métodos de pago</a>
+                <a class="nav-link col-lg-4 col-md-4 col-12" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false"><i class="fas fa-comments"></i> Comentarios</a>
+            </nav>
+
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="comparar" role="tabpanel" aria-labelledby="comparar-tab">
                     <div class="table-responsive scrollContainerX">

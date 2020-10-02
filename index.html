@@ -204,43 +204,6 @@
         </div>
     </div>
 
-
-    <div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="col-10 modal-title text-center display-4" id="modalLabel" style="padding-left: 20%; font-size: 2.1em">Boletín Informativo</h5>
-                    <a type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" style="color: red">&times;</span>
-                    </a>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group ml-3 mr-3">
-                        <label for="txtNombre">Nombre</label>
-                        <input class="form-control" type="text" id="txtNombre" placeholder="Ingrese su nombre">
-                    </div>
-                    <div class="form-group ml-3 mr-3">
-                        <label for="txtEmail">Correo electrónico</label>
-                        <input class="form-control" id="txtEmail" type="email" placeholder="Ingrese su correo electrónico">
-                    </div>
-                    <div class="form-group ml-3 mr-3">
-                        <label for="txtaComentario">Comentario</label>
-                        <textarea placeholder="Ingrese un comentario" class="form-control" name="Holaa" id="txtaComentario" rows="5"></textarea>
-                    </div>
-                    <div class="form-group ml-3 mr-3 custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="chbConfirmacion">
-                        <label for="chbConfirmacion" class="custom-control-label">Correo de confirmación</label>
-                    </div>
-                    <div class="d-flex justify-content-center mt-3">
-                        <button aria-hidden="true" data-dismiss="modal" aria-label="Close" class="btn btn-info btn-sm pl-5 pr-5" type="button">Enviar <i class="fas fa-paper-plane"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -295,6 +258,40 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="col-10 modal-title text-center display-4" id="modalLabel" style="padding-left: 20%; font-size: 2.1em">Boletín Informativo</h5>
+                    <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: red">&times;</span>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group ml-3 mr-3">
+                        <label for="txtNombre">Nombre</label>
+                        <input class="form-control" type="text" id="txtNombre" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="form-group ml-3 mr-3">
+                        <label for="txtEmail">Correo electrónico</label>
+                        <input class="form-control" id="txtEmail" type="email" placeholder="Ingrese su correo electrónico">
+                    </div>
+                    <div class="form-group ml-3 mr-3">
+                        <label for="txtaComentario">Comentario</label>
+                        <textarea placeholder="Ingrese un comentario" class="form-control" name="Holaa" id="txtaComentario" rows="5"></textarea>
+                    </div>
+                    <div class="form-group ml-3 mr-3 custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="chbConfirmacion">
+                        <label for="chbConfirmacion" class="custom-control-label">Correo de confirmación</label>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button aria-hidden="true" data-dismiss="modal" aria-label="Close" class="btn btn-info btn-sm pl-5 pr-5" type="button">Enviar <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -302,12 +299,15 @@
         $(function () {
             $('[data-toggle="popover"]').popover()
         });
+
         $('.popover-dismiss').popover({
             trigger: 'focus'
         });
+
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         });
+
         $('.carousel').carousel({
            interval: 2900
         });
