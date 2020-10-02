@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/hover.css/css/hover-min.css">
     <title>Curso Bootstrap </title>
 </head>
 <body id="bodyPrices">
@@ -29,13 +30,6 @@
         <h1 class="display-3">Hoteles</h1>
     </div>
 
-    <div class="container">
-        <div class="row ">
-            <div class="col-md-10">
-
-            </div>
-        </div>
-    </div>
 
     <div class="row justify-content-center">
         <div class="col-lg-9 col-md-12 col-10 mb-1">
@@ -53,57 +47,53 @@
 
 
     <div class="row justify-content-center">
-        <div class="col-lg-9 col-md-12 col-10 mb-2">
-            <ul class="nav nav-pills" id="tabPrices" role="tablist">
-                <li class="nav-item active">
-                    <a href="#comparar" class="nav-link active" id="comparar-tab" data-toggle="pill" role="tab" aria-controls="comparar"><i class="fas fa-equals"></i> Comparar</a>
+        <div class="col-lg-9 col-md-12 col-10 mt-3">
+            <ul class="nav nav-pills" id="myTab" role="tablist" style="margin-bottom: 11px">
+                <li class="nav-item" style="width: 33.33%">
+                    <a class="nav-link active" id="comparar-tab" data-toggle="tab" href="#comparar" role="tab" aria-controls="comparar" aria-selected="true"><i class="fas fa-equals"></i> Comparar</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#tarjetas" class="nav-link" id="tarjetas-tab" data-toggle="pill" role="tab" aria-controls="tarjetas"><i class="far fa-credit-card"></i> Métodos de pago</a>
+                <li class="nav-item" style="width: 33.33%">
+                    <a class="nav-link" id="pagos-tab" data-toggle="tab" href="#pagos" role="tab" aria-controls="pagos" aria-selected="false"><i class="far fa-credit-card"></i> Métodos de pago</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#comentarios" class="nav-link" id="comentarios-tab" data-toggle="pill" role="tab" aria-controls="comntarios"><i class="fas fa-comments"></i> Comentarios</a>
+                <li class="nav-item" style="width: 33.34%">
+                    <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false"><i class="fas fa-comments"></i> Comentarios</a>
                 </li>
             </ul>
-        </div>
-    </div>
-    <div class="tab-content" id="tabContent">
-        <div class="tab-pane fade show active" id="comparar" role="tabpanel" aria-labelledby="comparar-tab">
-            <div class="row justify-content-center">
-                <div class="col-lg-9 col-md-12 col-10">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="comparar" role="tabpanel" aria-labelledby="comparar-tab">
                     <div class="table-responsive scrollContainerX">
                         <table class="table table-striped">
                             <thead class="thead-dark text-center">
-                            <th>Calidad</th>
+                            <th style="border-radius: 5px 0 0 0;">Calidad</th>
                             <th>Pinamar</th>
                             <th>Mar del Plata</th>
                             <th>San Clemente</th>
-                            <th>Santa Teresita</th>
+                            <th style="border-radius: 0 5px 0 0">Santa Teresita</th>
                             </thead>
                             <tbody class="text-center">
                             <tr>
-                                <td><i class="fas fa-star"></i></td>
+                                <td><i class="fas fa-star" style="color: #92afcb"></i></td>
                                 <td>$100</td>
                                 <td>$105</td>
                                 <td>$120</td>
                                 <td>$150</td>
                             </tr>
                             <tr>
-                                <td><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                                <td><i class="fas fa-star" style="color: #92afcb"></i><i class="fas fa-star" style="color: #92afcb"></i></td>
                                 <td>$105</td>
                                 <td>$120</td>
                                 <td>$135</td>
                                 <td>$140</td>
                             </tr>
                             <tr>
-                                <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                                <td><i class="fas fa-star" style="color: #92afcb"></i><i class="fas fa-star" style="color: #92afcb"></i><i class="fas fa-star" style="color: #92afcb"></i></td>
                                 <td>$100</td>
                                 <td>$125</td>
                                 <td>$150</td>
                                 <td>$185</td>
                             </tr>
                             <tr>
-                                <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                                <td><i class="fas fa-star" style="color: #92afcb"></i><i class="fas fa-star" style="color: #92afcb"></i><i class="fas fa-star" style="color: #92afcb"></i><i class="fas fa-star" style="color: #92afcb"></i></td>
                                 <td>$200</td>
                                 <td>$225</td>
                                 <td>$250</td>
@@ -113,48 +103,114 @@
                         </table>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="tab-pane fade show active" id="tarjetas" role="tabpanel" aria-labelledby="comparar-tab">
-            <div class="d-flex justify-content-center mt-3">
-                <div class="card" style="width: 30%;">
-                    <div class="card-header" style="background-color: #6fa7e0; color: #e9e9e9">
-                        Métodos de Pago
+
+                <div class="tab-pane fade" id="pagos" role="tabpanel" aria-labelledby="pagos-tab">
+                    <div class="accordion" id="accordionPrices">
+                        <div class="card accordionCard">
+                            <div class="card-header" id="headerOne">
+                                <button class="btn collapsed accordionButton" type="button" data-toggle="collapse" data-target="#collapseCredito" aria-expanded="true" aria-controls="collapseCredito">
+                                    <i class="fas fa-credit-card"></i>&nbsp; Tarjeta de Crédito
+                                </button>
+                                <i style="padding-top: 10px;" class="fas fa-chevron-down fa-sm float-right text-light"></i>
+                            </div>
+                            <div id="collapseCredito" class="collapse" aria-labelledby="headerOne" data-parent="#accordionPrices">
+                                <div class="card-body accordionBody">• Reserva hasta en 3 cuotas sin intereses.
+                                </div>
+                            </div>
+
+                            <div class="card-header" id="headerTwo">
+                                <button class="btn collapsed accordionButton" type="button" data-toggle="collapse" data-target="#collapseDebito" aria-expanded="true" aria-controls="collapseDebito">
+                                    <i class="fas fa-id-card"></i>&nbsp; Tarjeta de Débito
+                                </button>
+                                <i style="padding-top: 10px;" class="fas fa-chevron-down fa-sm float-right text-light"></i>
+                            </div>
+                            <div id="collapseDebito" class="collapse" aria-labelledby="headerTwo" data-parent="#accordionPrices">
+                                <div class="card-body accordionBody">• Reserva hasta en 12 cuotas sin intereses.
+                                </div>
+                            </div>
+
+                            <div class="card-header" id="headerThree">
+                                <button class="btn collapsed accordionButton" type="button" data-toggle="collapse" data-target="#collapsePaypal" aria-expanded="true" aria-controls="collapsePaypal">
+                                    <i class="fab fa-paypal fa-lg"></i>&nbsp; Paypal
+                                </button>
+                                <i style="padding-top: 10px;" class="fas fa-chevron-down fa-sm float-right text-light"></i>
+                            </div>
+                            <div id="collapsePaypal" class="collapse" aria-labelledby="headerThree" data-parent="#accordionPrices">
+                                <div class="card-body accordionBody">• Reserva hasta en 24 cuotas sin intereses.
+                                </div>
+                            </div>
+
+                            <div class="card-header" id="headerFour">
+                                <button class="btn collapsed accordionButton" type="button" data-toggle="collapse" data-target="#collapseEfectivo" aria-expanded="true" aria-controls="collapseEfectivo">
+                                    <i class="fas fa-money-bill-wave"></i>&nbsp; Efectivo
+                                </button>
+                                <i style="padding-top: 10px;" class="fas fa-chevron-down fa-sm float-right text-light"></i>
+                            </div>
+                            <div id="collapseEfectivo" class="collapse" aria-labelledby="headerFour" data-parent="#accordionPrices">
+                                <div class="card-body accordionBody">• Recibe un 10% de descuento en tu compra.
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Tarjeta de crédito</li>
-                        <li class="list-group-item">Tarjeta de débito</li>
-                        <li class="list-group-item">Paypal</li>
-                    </ul>
+                </div>
+
+                <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+
                 </div>
             </div>
         </div>
     </div>
 
 
-    <footer class="mt-4 pt-1">
-        <div class="row">
-            <div class="col-sm-4 d-flex flex-column align-items-start">
-                <h5 class="text-center">Redes Sociales</h5>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-                <a href="#">Google+</a>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>Nosotros</h6>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores officia optio perspiciatis quidem saepe, sequi velit. Accusantium, consequatur debitis dolor eos maxime molestiae odio officia perferendis perspiciatis quam similique sunt. Accusantium, consequatur.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3 rowSecciones">
+                    <h6>Secciones</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="we.html">Nosotros</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="prices.html">Precios</a></li>
+                        <li><a href="terms.html">Términos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Contacto</h6>
+                    <ul class="footer-links">
+                        <li><a><i class="fas fa-map-marker-alt"></i> Calle 11-5 Zona 1, Guatemala</a></li>
+                        <li><a><i class="fas fa-mobile-alt"></i> +502 86547214</a></li>
+                        <li><a><i class="fas fa-envelope"></i> contact-us@hoteles.com</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-sm-4 d-flex flex-column align-items-center">
-                <address>
-                    <h5 class="text-center">Información</h5>
-                    <p class="text-center"><i class="fas fa-map-marker-alt imarker"></i><span>&nbsp;&nbsp;Calle 9-74 Zona 11, Guatemala</span></p>
-                    <p class="text-center"><i class="fas fa-phone-alt"></i><span> +502 63217896</span></p>
-                    <p class="text-center"><i class="fas fa-envelope"></i><span>&nbsp;&nbsp;hoteles@hotels.com</span></p>
-                </address>
-            </div>
-            <div class="col-sm-4 d-flex flex-column align-items-end">
-                <h5 class="text-center">Secciones</h5>
-                <a href="#">Nosotros</a>
-                <a href="#">Contacto</a>
-                <a href="#">Precios</a>
-                <a href="#">Términos y Condiciones+</a>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2020 Derechos reservados por
+                        <a href="#">Hoteles</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fab fa-dribbble fa-lg"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
