@@ -471,6 +471,12 @@ a.carousel-control-next:hover{
     margin-top: 0!important;
 }
 
+.btn-contactarme:disabled{
+    box-shadow: none!important;
+    background-color: #5a81ce!important;
+    border-color: #5a81ce!important;
+}
+
 .btn-contactarme:hover{
     box-shadow: none!important;
     background-color: #5a81ce!important;

@@ -248,10 +248,10 @@
 
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <ul class="social-icons">
-                        <li><a class="facebook" href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
-                        <li><a class="twitter" href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
-                        <li><a class="dribbble" href="#"><i class="fab fa-dribbble fa-lg"></i></a></li>
-                        <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                        <li><a id="btnPrueba" class="facebook" href=""><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                        <li><a class="twitter" href=""><i class="fab fa-twitter fa-lg"></i></a></li>
+                        <li><a class="dribbble" href=""><i class="fab fa-dribbble fa-lg"></i></a></li>
+                        <li><a class="linkedin" href=""><i class="fab fa-linkedin-in fa-lg"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -311,6 +311,33 @@
         $('.carousel').carousel({
            interval: 2900
         });
+
+        $('#modalContacto').on('show.bs.modal', function (){
+            $('#btnContactarme').prop('disabled', true);
+        });
+
+        $('#modalContacto').on('hide.bs.modal', function (){
+            $('#btnContactarme').prop('disabled', false);
+            $('#btnContactarme').prop('focus', false);
+        });
+
+        //Mensajes por consola
+        $('#modalContacto').on('show.bs.modal', function (){
+            console.log('Modal creandonse');
+        });
+
+        $('#modalContacto').on('shown.bs.modal', function (){
+            console.log('Modal creado');
+        });
+
+        $('#modalContacto').on('hide.bs.modal', function (){
+            console.log('Cerrando modal');
+        });
+
+        $('#modalContacto').on('hidden.bs.modal', function (){
+            console.log('Modal cerrado');
+        });
+
     </script>
 </body>
 </html>
