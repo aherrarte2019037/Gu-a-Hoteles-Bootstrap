@@ -2,16 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- build:css css/prices.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="node_modules/hover.css/css/hover-min.css">
     <title>Curso Bootstrap </title>
+    <!-- endbuild -->
+
 </head>
 <body id="bodyPrices">
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a href="index.html" class="navbar-brand mb-1">Hoteles</a>
+    <nav class="navbar navbar-light bg-light d-flex justify-content-center mb-2 mt-2">
+        <a href="index.html" class="navbar-brand">
+            <img src="images/logoNav.png" height="100" alt="">
+        </a>
+    </nav>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,8 +35,8 @@
         </div>
     </nav>
 
-    <div class="jumbotron jumbotronPrincipal">
-        <h1 class="display-3">Hoteles</h1>
+    <div class="jumbotron jumbotronPrincipal text-center">
+        <h1 class="display-3">Precios</h1>
     </div>
 
 
@@ -37,7 +46,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">Inicio</li>
                     <li class="breadcrumb-item">Nosotros</li>
-                    <li class="breadcrumb-item">Contactos</li>
+                    <li class="breadcrumb-item">Contacto</li>
                     <li class="breadcrumb-item active">Precios</li>
                     <li class="breadcrumb-item">Términos</li>
                 </ol>
@@ -188,6 +197,11 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="d-flex justify-content-center">
+                <button id="btnContactarme" data-toggle="modal" data-target="#modalContacto" type="button" class="btn btn-sm btn-info mt-2 btn-contactarme">Boletín Informativo&nbsp;<i class="fas fa-comment-dots"></i></button>
+            </div>
+
             <hr>
         </div>
         <div class="container">
@@ -210,9 +224,56 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="col-10 modal-title text-center display-4" id="modalLabel" style="padding-left: 20%; font-size: 2.1em">Boletín Informativo</h5>
+                    <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: red">&times;</span>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group ml-3 mr-3">
+                        <label for="txtNombre">Nombre</label>
+                        <input class="form-control" type="text" id="txtNombre" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="form-group ml-3 mr-3">
+                        <label for="txtEmail">Correo electrónico</label>
+                        <input class="form-control" id="txtEmail" type="email" placeholder="Ingrese su correo electrónico">
+                    </div>
+                    <div class="form-group ml-3 mr-3">
+                        <label for="txtaComentario">Comentario</label>
+                        <textarea placeholder="Ingrese un comentario" class="form-control" name="Holaa" id="txtaComentario" rows="5"></textarea>
+                    </div>
+                    <div class="form-group ml-3 mr-3 custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="chbConfirmacion">
+                        <label for="chbConfirmacion" class="custom-control-label">Correo de confirmación</label>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button aria-hidden="true" data-dismiss="modal" aria-label="Close" class="btn btn-info btn-sm pl-5 pr-5" type="button">Enviar <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- build:js js/prices.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $('#modalContacto').on('show.bs.modal', function (){
+            $('#btnContactarme').prop('disabled', true);
+        });
+
+        $('#modalContacto').on('hide.bs.modal', function (){
+            $('#btnContactarme').prop('disabled', false);
+            $('#btnContactarme').prop('focus', false);
+        });
+    </script>
+    <!-- endbuild -->
+
 </body>
 </html>
 

@@ -1,0 +1,25 @@
+@yellowLess: #efc545;
+@redLess: #f36674;
+@greenLess: #6ce587;
+
+.margenesColores(@left: 15px, @right: 15px, @top: 10px){
+  margin-left: @left;
+  margin-right: @right;
+  margin-top: @top;
+  text-decoration: underline;
+}
+
+.colorYellow{
+  background-color: @yellowLess;
+  .margenesColores();
+}
+
+.colorRed{
+  background-color: @redLess;
+  .margenesColores();
+}
+
+.colorGreen{
+  background-color: @greenLess;
+  .margenesColores();
+}

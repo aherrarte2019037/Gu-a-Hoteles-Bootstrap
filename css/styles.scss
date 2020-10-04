@@ -1,0 +1,26 @@
+$yellow: #ffc107;
+$red: #dc3545;
+$green: #28a745;
+
+@mixin margenesColores($left, $right, $top){
+  margin-left: $left;
+  margin-right: $right;
+  margin-top: $top;
+  text-decoration: underline;
+}
+
+.colorYellow{
+ background-color: $yellow;
+  @include margenesColores(15px, 15px, 10px);
+}
+
+.colorRed{
+  background-color: $red;
+  @include margenesColores(15px, 15px, 10px);
+}
+
+.colorGreen{
+  background-color: $green;
+  @include margenesColores(15px, 15px, 10px);
+}
+

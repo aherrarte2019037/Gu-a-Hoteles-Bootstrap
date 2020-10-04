@@ -2,17 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- build:css css/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="node_modules/hover.css/css/hover-min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
     <title>Curso Bootstrap </title>
 </head>
 <body id="bodyIndex">
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a href="./index.html" class="navbar-brand mb-1">Hoteles</a>
+    <nav class="navbar navbar-light bg-light d-flex justify-content-center mb-2 mt-2">
+        <a href="index.html" class="navbar-brand">
+            <img src="images/logoNav.png" height="100" alt="">
+        </a>
+    </nav>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,9 +37,10 @@
         </div>
     </nav>
 
-    <div class="jumbotron jumbotronPrincipal">
-        <h1 class="display-3">Hoteles</h1>
+    <div class="jumbotron jumbotronPrincipal text-center">
+        <h1 class="display-4">Bienvenido</h1>
     </div>
+
     <div class="d-flex flex-wrap justify-content-center">
         <div class="col-lg-9 col-md-12 col-10 mb-0">
             <nav aria-label="breadcrumb">
@@ -204,6 +215,18 @@
         </div>
     </div>
 
+    <h1 class="text-center display-4">Colores como variables en preprocesadores</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-9 col-md-12 col-10">
+            <div class="d-flex">
+                <h3 class="colorYellow font-weight-normal flex-grow-1 text-center text-light">SCSS Yellow</h3>
+                <h3 class="colorRed font-weight-normal flex-grow-1 text-center text-light">SCSS Red</h3>
+                <h3 class="colorGreen font-weight-normal flex-grow-1 text-center text-light">SCSS Green</h3>
+            </div>
+        </div>
+    </div>
+
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -292,6 +315,7 @@
         </div>
     </div>
 
+    <!-- build:js js/index.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -337,8 +361,8 @@
         $('#modalContacto').on('hidden.bs.modal', function (){
             console.log('Modal cerrado');
         });
-
     </script>
+    <!-- endbuild -->
 </body>
 </html>
 

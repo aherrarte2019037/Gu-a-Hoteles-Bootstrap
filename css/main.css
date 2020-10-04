@@ -2,7 +2,23 @@
     width: 0;
 }
 
+#bodyWe::-webkit-scrollbar {
+    width: 0;
+}
+
+#bodyContact{
+    overflow-x: hidden;
+}
+
 #bodyContact::-webkit-scrollbar {
+    width: 0;
+}
+
+#bodyPrices::-webkit-scrollbar {
+    width: 0;
+}
+
+#bodyTerms::-webkit-scrollbar {
     width: 0;
 }
 
@@ -29,11 +45,9 @@
 }
 
 .jumbotronPrincipal{
-    text-align: center;
     font-weight: normal;
     color: white;
     border-radius: 0;
-    margin-top: 45px;
     background: #136a8a;
     background: -webkit-linear-gradient(to top, #267871, #136a8a);
     background: linear-gradient(to right, #267871, #136a8a);

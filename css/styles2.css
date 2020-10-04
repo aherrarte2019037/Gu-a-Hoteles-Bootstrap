@@ -1,0 +1,21 @@
+.colorYellow {
+  background-color: #efc545;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+.colorRed {
+  background-color: #f36674;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+.colorGreen {
+  background-color: #6ce587;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  text-decoration: underline;
+}
