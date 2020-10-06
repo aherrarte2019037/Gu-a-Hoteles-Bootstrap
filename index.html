@@ -315,53 +315,10 @@
         </div>
     </div>
 
-    <!-- build:js js/index.js -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(function () {
-            $('[data-toggle="popover"]').popover()
-        });
-
-        $('.popover-dismiss').popover({
-            trigger: 'focus'
-        });
-
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        });
-
-        $('.carousel').carousel({
-           interval: 2900
-        });
-
-        $('#modalContacto').on('show.bs.modal', function (){
-            $('#btnContactarme').prop('disabled', true);
-        });
-
-        $('#modalContacto').on('hide.bs.modal', function (){
-            $('#btnContactarme').prop('disabled', false);
-            $('#btnContactarme').prop('focus', false);
-        });
-
-        //Mensajes por consola
-        $('#modalContacto').on('show.bs.modal', function (){
-            console.log('Modal creandonse');
-        });
-
-        $('#modalContacto').on('shown.bs.modal', function (){
-            console.log('Modal creado');
-        });
-
-        $('#modalContacto').on('hide.bs.modal', function (){
-            console.log('Cerrando modal');
-        });
-
-        $('#modalContacto').on('hidden.bs.modal', function (){
-            console.log('Modal cerrado');
-        });
-    </script>
     <!-- endbuild -->
 </body>
 </html>
