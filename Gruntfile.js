@@ -74,7 +74,7 @@ module.exports = function (grunt) {
 
         clean: {
             build: {
-                src: ['dist/']
+                src: ['production/']
             }
         },
 
@@ -95,8 +95,8 @@ module.exports = function (grunt) {
             release: {
                 files: [{
                     src: [
-                        'dist/js/*.js',
-                        'dist/css/*.css',
+                        'production/js/*.js',
+                        'production/css/*.css',
                     ]
                 }]
             }
@@ -137,9 +137,9 @@ module.exports = function (grunt) {
         },
 
         usemin: {
-            html: ['dist/index.html', 'dist/we.html', 'dist/contact.html', 'dist/prices.html', 'dist/terms.html'],
+            html: ['production/index.html', 'production/we.html', 'production/contact.html', 'production/prices.html', 'production/terms.html'],
             options: {
-                assetDir: ['dist', 'dist/css', 'dist/js']
+                assetDir: ['dist', 'production/css', 'production/js']
             }
         }
 

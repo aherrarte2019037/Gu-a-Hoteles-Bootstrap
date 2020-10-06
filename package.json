@@ -9,9 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "clean": "rimraf dist",
-    "imagemin": "imagemin images/* --out-dir dist/images",
-    "usemin": "usemin index.html -d dist -o dist/index.html --htmlmin true && usemin we.html -d dist -o dist/we.html --htmlmin true && usemin contact.html -d dist -o dist/contact.html --htmlmin true && usemin prices.html -d dist -o dist/prices.html --htmlmin true && usemin terms.html -d dist -o dist/terms.html --htmlmin true",
+    "clean": "rimraf production",
+    "imagemin": "imagemin images/* --out-dir production/images",
+    "usemin": "usemin index.html -d production -o production/index.html --htmlmin true && usemin we.html -d production -o production/we.html --htmlmin true && usemin contact.html -d production -o production/contact.html --htmlmin true && usemin prices.html -d production -o production/prices.html --htmlmin true && usemin terms.html -d production -o production/terms.html --htmlmin true",
     "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
